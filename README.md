@@ -11,7 +11,8 @@ Por medio de un servidor instalado
 - Abrir el archivo index.html en un editor de código y ejecutar el Live Server para visualizar la estructura en un navegador web.
 
 ## Funcionalidads actuales
-- Aún no hay funcionalidades implementadas, solo se ha creado la estructura base en HTML.
+- Estructura básica en HTML
+- Título y presentación de la página
 
 ## Etapa 2: HTML
 ### Módulo 1: Introducción a HTML
@@ -40,3 +41,15 @@ Por medio de un servidor instalado
 - Anidamiento
 - Jerarquía del documento
 - Identación y legibilidad
+
+### Módulo 3: texto y contenido
+#### Temas
+- Encabezados
+- Párrafos
+- Saltos de línea
+- Énfasis y citas
+- Importancia de la semántica
+- Código
+- Texto preformateado
+- Abreviaturas
+- Diferenicia entre presentación y significado
