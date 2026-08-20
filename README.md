@@ -14,6 +14,7 @@ Por medio de un servidor instalado
 - Estructura básica en HTML
 - Título y presentación de la página
 - Categorías de productos
+- Tabla de productos con información relevante
 
 ## Etapa 2: HTML
 ### Módulo 1: Introducción a HTML
@@ -89,3 +90,16 @@ Por medio de un servidor instalado
 - Listas anidadas
 - Listas de definición
 - Uso semántico de las listas
+
+### Módulo 7: Tablas
+#### Temas
+- Cuando utilizar tablas.
+- table
+- tr, th, td
+- thead, tbody, tfoot
+- caption
+- colspan y rowspan
+- Encabezados
+- Relación entre datos y estructura
+- Accesibilidad de tablas
+- Buenas prácticas para tablas
