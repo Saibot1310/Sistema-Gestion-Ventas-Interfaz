@@ -13,6 +13,7 @@ Por medio de un servidor instalado
 ## Funcionalidads actuales
 - Estructura básica en HTML
 - Título y presentación de la página
+- Categorías de productos
 
 ## Etapa 2: HTML
 ### Módulo 1: Introducción a HTML
@@ -79,3 +80,12 @@ Por medio de un servidor instalado
 - source
 - contenido multimedia y accesibilidad
 - Buenas prácticas para recursos externos
+
+### Módulo 6: Listas
+#### Temas
+- Listas ordenadas
+- Listas desordenadas
+- Elementos de lista
+- Listas anidadas
+- Listas de definición
+- Uso semántico de las listas
