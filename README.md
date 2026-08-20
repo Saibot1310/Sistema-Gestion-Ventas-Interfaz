@@ -65,3 +65,17 @@ Por medio de un servidor instalado
 - target
 - Relación entre documentos
 - Buenas prácticas para enlaces
+
+### Módulo 5: Imágenes y contenido multimedia
+#### Temas
+- img
+- src
+- alt
+- dimensiones decorativas y significativas
+- figure
+- figcaption
+- audio
+- video
+- source
+- contenido multimedia y accesibilidad
+- Buenas prácticas para recursos externos
