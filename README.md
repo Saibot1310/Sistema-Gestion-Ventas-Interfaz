@@ -103,3 +103,15 @@ Por medio de un servidor instalado
 - Relación entre datos y estructura
 - Accesibilidad de tablas
 - Buenas prácticas para tablas
+
+### Módulo 8: Formularios
+#### Temas
+- Formulario
+- form, action, method
+- input, label, textarea, select, option
+- button
+- Tipos de input
+- name, value, placeholder, required, disabled, readonly, autocompleted
+- agrupación de controles
+- fieldset, legend
+- Estructura semántica de formularios
