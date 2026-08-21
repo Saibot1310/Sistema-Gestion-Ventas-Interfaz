@@ -15,6 +15,7 @@ Por medio de un servidor instalado
 - Título y presentación de la página
 - Categorías de productos
 - Tabla de productos con información relevante
+- Formulario de registro de productos
 
 ## Etapa 2: HTML
 ### Módulo 1: Introducción a HTML
