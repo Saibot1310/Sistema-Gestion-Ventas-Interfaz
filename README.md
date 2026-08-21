@@ -155,3 +155,15 @@ Por medio de un servidor instalado
 - Relación entre HTML y otros recursos
 - Introdcucción a SEO técnico
 - Metadatos relevantes para documentos web
+
+### Módulo 12: Organización de un proyecto HTML
+#### Temas
+- Organización de archivos
+- Carpetas
+- Documentos HTML
+- Recursos
+- Imágenes
+- Estructura de un proyecto web estático
+- Convenciones de nombres
+- Separación de responsabilidades
+- Buenas prácticas de organización
