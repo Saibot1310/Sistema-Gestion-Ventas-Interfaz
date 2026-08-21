@@ -140,3 +140,18 @@ Por medio de un servidor instalado
 - cuando utilizar ARIA
 - Errores comunes en accesibilidad
 - Principio de utilizar HTML nativo antes que ARIA
+
+### Módulo 11: Metadatos y recursos del documento
+#### Temas
+- meta
+- charset
+- viewport
+- description
+- author
+- title
+- link
+- favicon
+- Recursos externos
+- Relación entre HTML y otros recursos
+- Introdcucción a SEO técnico
+- Metadatos relevantes para documentos web
