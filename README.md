@@ -124,3 +124,18 @@ Por medio de un servidor instalado
 - Estructura semántica de un documento HTML
 - Jerarquía del contenido
 - Buenas prácticas para HTML semántico
+
+### Módulo 10: Accesibilidad Web
+#### Temas
+- Accesibilidad web
+- Importancia de la accesibilidad
+- HTML semántico y accesibilidad
+- Texto alternativo
+- Labels
+- Formularios accesibles
+- Navegación
+- Elementos interactivos
+- Atributos ARIA
+- cuando utilizar ARIA
+- Errores comunes en accesibilidad
+- Principio de utilizar HTML nativo antes que ARIA
