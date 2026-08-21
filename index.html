@@ -62,6 +62,65 @@
         </tr>
       </tbody>
     </table>
+
+    <h2>Agregar nuevo producto</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos del producto</legend>
+        
+        <p>
+          <label for="nombre-producto">Nombre</label>
+          <input 
+            type="text"
+            id="nombre-producto"
+            name="nombre"
+            placeholder="Ej: Auriculares inalámbricos"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="precio-producto">Precio</label>
+          <input 
+            type="number"
+            id="precio-producto"
+            name="precio"
+            min="0"
+            step="1"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="cantidad-producto">Cantidad en stock</label>
+          <input 
+            type="number"
+            id="cantidad-producto"
+            name="cantidad"
+            min="0"
+            step="1"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="descuento-producto">Descuento (%)</label>
+          <input 
+            type="number" 
+            id="descuento-producto"
+            name="descuento"
+            min="0"
+            max="100"
+            value="0"
+          >
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Guardar producto</button>
+      </p>
+
+    </form>
     
   </body>
 
