@@ -115,3 +115,12 @@ Por medio de un servidor instalado
 - agrupación de controles
 - fieldset, legend
 - Estructura semántica de formularios
+
+### Módulo 9: HTML semántico
+#### Temas
+- Elementos semánticos
+- header, nav, main, section, article, aside, footer, address
+- div y span
+- Estructura semántica de un documento HTML
+- Jerarquía del contenido
+- Buenas prácticas para HTML semántico
