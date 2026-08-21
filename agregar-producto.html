@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulario para agregar un nuevo producto al catálogo, con nombre, precio, stock y descuento."/>
+    <link rel="icon" type="img/png" href="assets/img/catalogo-fav-icon.png" />
+    <title>Agregar Producto - Catálogo de Productos</title>
+  </head>
+
+  <body>
+
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <h1>Agregar nuevo producto</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="agregar-producto.html">Agregar nuevo producto</a></li>
+      </ul>
+    </nav>
+
+    <main id="contenido-principal">
+      <section id="agregar-producto">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos del producto</legend>
+            <p>
+              <label for="nombre-producto">Nombre</label><br>
+              <input type="text" id="nombre-producto" name="nombre" placeholder="Ej: Auriculares inalámbricos" required>
+            </p>
+
+            <p>
+              <label for="precio-producto">Precio</label><br>
+              <input type="number" id="precio-producto" name="precio" min="0" step="1" required>
+            </p>
+
+            <p>
+              <label for="cantidad-producto">Cantidad en stock</label><br>
+              <input type="number" id="cantidad-producto" name="cantidad" min="0" step="1" required>
+            </p>
+
+            <p>
+              <label for="descuento-producto">Descuento (%)</label><br>
+              <input type="number" id="descuento-producto" name="descuento" min="0" max="100" step="1" value="0">
+            </p>
+          </fieldset>
+
+          <p><button type="submit">Guardar producto</button></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Catálogo de Productos</p>
+    </footer>
+  </body>
+</html>
