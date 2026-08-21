@@ -7,121 +7,140 @@
   </head>
 
   <body>
-    <h1>Cátalogo de Productos</h1>
+    <header>
+      <h1>Cátalogo de Productos</h1>
+      <figure>
+        <img src="assets/img/banner-catalogo.jpg" alt="Estantería con productos variados del catálogo" width="800" height="400">
+        <figcaption>Una selección de nuestros productos disponibles</figcaption>
+      </figure>
+    </header>
 
-    <figure>
-      <img src="assets/img/banner-catalogo.jpg" alt="Estantería con productos variados del catálogo" width="800" height="400">
-      <figcaption>Una selección de nuestros productos disponibles</figcaption>
-    </figure>
+    <nav>
+      <ul>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#agregar-producto">Agregar nuevo producto</a></li>
+      </ul>
+    </nav>
 
-    <p>Bienvenido al catálogo. Aquí encontrarás el listado de productos disponibles, con su precio y estado de stock.</p>
-    <p><strong>Nota: </strong>los productos sin stock disponible se indicarán claramente.</p>
+    <main>
+      <p>Bienvenido al catálogo. Aquí encontrarás el listado de productos disponibles, con su precio y estado de stock.</p>
+      <p><strong>Nota: </strong>los productos sin stock disponible se indicarán claramente.</p>
 
-    <h2>Categorías</h2>
-    <ul>
-      <li>Electrónica</li>
-      <li>Hogar</li>
-      <li>Indumentaria</li>
-    </ul>
+      <section id="categorias">
+        <h2>Categorías</h2>
+        <ul>
+          <li>Electrónica</li>
+          <li>Hogar</li>
+          <li>Indumentaria</li>
+        </ul>
+      </section>
 
-    <h2>Productos</h2>
-    <table>
-      <caption>Listado de productos con precio y disponibilidad actual</caption>
-      <thead>
-        <tr>
-          <th scope="col">Producto</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Stock</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Auriculares inalámbricos</th>
-          <td>$45.000</td>
-          <td>Disponible</td>
-        </tr>
-        <tr>
-          <th scope="row">Lámpara de escritorio LED</th>
-          <td>$12.500</td>
-          <td>Disponible</td>
-        </tr>
-        <tr>
-          <th scope="row">Zapatillas urbanas talle 42</th>
-          <td>$38.000</td>
-          <td>Agotado</td>
-        </tr>
-        <tr>
-          <th scope="row">Cafetera eléctrica</th>
-          <td>$27.000</td>
-          <td>Disponible</td>
-        </tr>
-        <tr>
-          <th scope="row">Mochila impermeable</th>
-          <td>$19.900</td>
-          <td>Agotado</td>
-        </tr>
-      </tbody>
-    </table>
+      <section id="productos">
+        <h2>Productos</h2>
+        <table>
+          <caption>Listado de productos con precio y disponibilidad actual</caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Auriculares inalámbricos</th>
+              <td>$45.000</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <th scope="row">Lámpara de escritorio LED</th>
+              <td>$12.500</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <th scope="row">Zapatillas urbanas talle 42</th>
+              <td>$38.000</td>
+              <td>Agotado</td>
+            </tr>
+            <tr>
+              <th scope="row">Cafetera eléctrica</th>
+              <td>$27.000</td>
+              <td>Disponible</td>
+            </tr>
+            <tr>
+              <th scope="row">Mochila impermeable</th>
+              <td>$19.900</td>
+              <td>Agotado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <h2>Agregar nuevo producto</h2>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Datos del producto</legend>
-        
-        <p>
-          <label for="nombre-producto">Nombre</label>
-          <input 
-            type="text"
-            id="nombre-producto"
-            name="nombre"
-            placeholder="Ej: Auriculares inalámbricos"
-            required
-          >
-        </p>
-
-        <p>
-          <label for="precio-producto">Precio</label>
-          <input 
-            type="number"
-            id="precio-producto"
-            name="precio"
-            min="0"
-            step="1"
-            required
-          >
-        </p>
-
-        <p>
-          <label for="cantidad-producto">Cantidad en stock</label>
-          <input 
-            type="number"
-            id="cantidad-producto"
-            name="cantidad"
-            min="0"
-            step="1"
-            required
-          >
-        </p>
-
-        <p>
-          <label for="descuento-producto">Descuento (%)</label>
-          <input 
-            type="number" 
-            id="descuento-producto"
-            name="descuento"
-            min="0"
-            max="100"
-            value="0"
-          >
-        </p>
-      </fieldset>
-
-      <p>
-        <button type="submit">Guardar producto</button>
-      </p>
-
-    </form>
+      <section id="agregar-producto">
+        <h2>Agregar nuevo producto</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos del producto</legend>
+            
+            <p>
+              <label for="nombre-producto">Nombre</label>
+              <input 
+                type="text"
+                id="nombre-producto"
+                name="nombre"
+                placeholder="Ej: Auriculares inalámbricos"
+                required
+              >
+            </p>
     
-  </body>
+            <p>
+              <label for="precio-producto">Precio</label>
+              <input 
+                type="number"
+                id="precio-producto"
+                name="precio"
+                min="0"
+                step="1"
+                required
+              >
+            </p>
+    
+            <p>
+              <label for="cantidad-producto">Cantidad en stock</label>
+              <input 
+                type="number"
+                id="cantidad-producto"
+                name="cantidad"
+                min="0"
+                step="1"
+                required
+              >
+            </p>
+    
+            <p>
+              <label for="descuento-producto">Descuento (%)</label>
+              <input 
+                type="number" 
+                id="descuento-producto"
+                name="descuento"
+                min="0"
+                max="100"
+                value="0"
+              >
+            </p>
+          </fieldset>
 
+          <p>
+            <button type="submit">Guardar producto</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Catálogo de Productos</p>
+    </footer>
+
+  </body>
 </html>
