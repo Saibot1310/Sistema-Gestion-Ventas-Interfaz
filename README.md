@@ -167,3 +167,14 @@ Por medio de un servidor instalado
 - Convenciones de nombres
 - Separación de responsabilidades
 - Buenas prácticas de organización
+
+### Módulo 13: HTML y el navegador
+#### Temas
+- Interpretación de HTML por el navegador
+- Parsing
+- Estructura del documento
+- DOM como representación conceptual
+- Elementos y nodos
+- Relación entre HTML y el DOM
+- Renderizado conceptual
+- HTML como entrada del navegador
