@@ -1,13 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+nav a {
+  padding: 4px 8px;
+  color: #008000;
+}
+
+table th,
+table td {
+  padding: 8px 12px;
+}
 
 .agotado {
   outline: 2px dashed;
 }
 
-input[type="number"] {
-  outline: 1px dashed;
+fieldset {
+  padding: 16px;
+  border: 1px solid #999;
+  margin-bottom: 12px;
 }
 
-nav a {
-  outline: 1px dashed;
-  color: #008000;
+input[type="number"] {
+  padding: 6px;
+  border: 1px solid #999;
 }
