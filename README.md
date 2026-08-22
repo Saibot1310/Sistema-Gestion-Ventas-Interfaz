@@ -1,7 +1,7 @@
 # Estructura de un Sistema de Gestión de Ventas
 
 ## Objetivo
-Construir una estructura en HTML para generar una interfaz web que permita representar información de un sisteme de gestión de ventas. Esta estructura servirá como base para el desarrollo de un sistema más completo en el futuro y debe contener estructura, contenido, formularios, tablas, semánitica y accesbilidad.
+Construir una estructura en HTML para generar una interfaz web que permita representar información de un sisteme de gestión de ventas. Esta estructura servirá como base para el desarrollo de un sistema más completo en el futuro y debe contener estructura, contenido, formularios, tablas, semánitica y accesbilidad. Diseñar una presentación visual básica utilizando CSS para mejorar la experiencia del usuario y la estética de la interfaz.
 
 ## Ejecución
 De manera local
