@@ -254,3 +254,13 @@ Por medio de un servidor instalado
 - dimensiones
 - overflow
 - Margin collapsing
+
+### Módulo 7: Tipografía y texto
+#### Temas
+- font-family, font-size, font-weight, font-style
+- line-height, letter-spacing, word-spacing, withe-spacing
+- text-align, text-decoration, text-transform, text-overflow
+- Fuentes web
+- @font-face
+- Legibilidad
+- Jerarquía visual
