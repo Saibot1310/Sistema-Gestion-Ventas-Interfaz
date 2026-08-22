@@ -32,8 +32,11 @@ nav a {
   text-decoration: none;
 }
 
-nav li {
-  display: inline-block;
+nav ul {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  list-style: none;
 }
 
 figure {
