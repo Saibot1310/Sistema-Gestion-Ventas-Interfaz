@@ -219,3 +219,17 @@ Por medio de un servidor instalado
 - Agrupación de selectores
 - Combinación de selectores
 - Especificidad de selectores
+
+### Módulo 4: Cascada, herencia y especificidad
+#### Temas
+- Cascada
+- Origen de estilos
+- Importancia
+- Herencia
+- Valores heredados
+- Valores iniciales
+- Valores unset, inherit e initial
+- Conflictos entre reglas
+- Orden de aparición
+- !important
+- Buenas prácticas para evitar conflictos
