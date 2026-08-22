@@ -286,3 +286,17 @@ Por medio de un servidor instalado
 - Elementos reemplazados
 - Relación entre HTML y flujo visual
 - Como el navegador distribuye los elementos
+
+### Módulo 10: Flexbox
+#### Temas
+- Flex container
+- Flex items
+- Main axis y cross axis
+- flex-direction, flex-wrap
+- justify-content, align-items, align-content
+- gap
+- flex-grow, flex-shrink, flex-basis
+- flex
+- asign-self
+- orden de elementos
+- layouts con Flexbox
