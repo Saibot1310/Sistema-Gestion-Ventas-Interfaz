@@ -264,3 +264,13 @@ Por medio de un servidor instalado
 - @font-face
 - Legibilidad
 - Jerarquía visual
+
+### Módulo 8: Fondos, bordes y efectos visuales
+#### Temas
+- background-color, background-image, background-repeat, background-position, background-size
+- Gradientes
+- border, border-radius
+- outline
+- box-shadow
+- opacity
+- object-fit, object-position
