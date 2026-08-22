@@ -204,3 +204,18 @@ Por medio de un servidor instalado
 - Ventajas y desventajas de cada método
 - Buenas prácticas
 - Separación entre HTML y CSS
+
+### Módulo 3: Selectores
+#### Temas
+- Selector universal
+- Selectores de elemento
+- Selectores de clase
+- Selectores de ID
+- Selectores de atributo
+- Selectores descendientes
+- Selectores hijos
+- Selectores adyacentes
+- Selectores de hermanos generales
+- Agrupación de selectores
+- Combinación de selectores
+- Especificidad de selectores
