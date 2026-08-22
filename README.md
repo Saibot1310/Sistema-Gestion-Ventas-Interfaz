@@ -193,3 +193,14 @@ Por medio de un servidor instalado
 - Reglas CSS
 - Selectores
 - Propiedades y valores
+
+### Módulo 2: Incorporación de CSS en HTML
+#### Temas
+- CSS en línea
+- CSS interno
+- CSS externo
+- Elemento link
+- Organización de archivos CSS
+- Ventajas y desventajas de cada método
+- Buenas prácticas
+- Separación entre HTML y CSS
