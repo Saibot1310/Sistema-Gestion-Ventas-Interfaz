@@ -242,3 +242,15 @@ Por medio de un servidor instalado
 - Hexadecimal, RGB, RGBA, HSL, HSLA
 - Funciones CSS
 - calc(), min(), max(), clamp()
+
+### Módulo 6: Box model
+#### Temas
+- Concepto de box model
+- content, padding, border, margin
+- width y height
+- box-sizing
+- border-box
+- content-box
+- dimensiones
+- overflow
+- Margin collapsing
