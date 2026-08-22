@@ -178,3 +178,18 @@ Por medio de un servidor instalado
 - Relación entre HTML y el DOM
 - Renderizado conceptual
 - HTML como entrada del navegador
+
+## Etapa 3: CSS
+
+### Módulo 1: Introducción a CSS
+#### Temas
+- ¿Qué es CSS?
+- ¿Qué problema resuelve?
+- Historia de CSS
+- CSS y la Web
+- HTML vs CSS
+- Separación de responsabilidades y presentación
+- Sintaxis de CSS
+- Reglas CSS
+- Selectores
+- Propiedades y valores
