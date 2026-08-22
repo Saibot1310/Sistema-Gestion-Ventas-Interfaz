@@ -274,3 +274,15 @@ Por medio de un servidor instalado
 - box-shadow
 - opacity
 - object-fit, object-position
+
+### Módulo 9: Flujo y display
+#### Temas
+- Flujo normal
+- Block, inline, inline-block
+- display
+- none
+- visibility
+- overflow
+- Elementos reemplazados
+- Relación entre HTML y flujo visual
+- Como el navegador distribuye los elementos
