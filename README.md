@@ -233,3 +233,12 @@ Por medio de un servidor instalado
 - Orden de aparición
 - !important
 - Buenas prácticas para evitar conflictos
+
+### Módulo 5: Valores, unidades y colores
+- Valores CSS
+- Unidades absolutas y relativas
+- px, em, rem, %, vh, vw, vmin, vmax
+- Colores en CSS
+- Hexadecimal, RGB, RGBA, HSL, HSLA
+- Funciones CSS
+- calc(), min(), max(), clamp()
