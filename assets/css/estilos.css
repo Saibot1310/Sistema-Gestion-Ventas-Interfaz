@@ -1,0 +1,12 @@
+
+.agotado {
+  outline: 2px dashed;
+}
+
+input[type="number"] {
+  outline: 1px dashed;
+}
+
+nav a {
+  outline: 1px dashed;
+}
