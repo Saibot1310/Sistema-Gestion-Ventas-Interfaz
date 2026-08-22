@@ -32,6 +32,10 @@ nav a {
   text-decoration: none;
 }
 
+nav li {
+  display: inline-block;
+}
+
 figure {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
