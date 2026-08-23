@@ -39,6 +39,15 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #000099;
+}
+
+nav a:focus-visible {
+  outline: 2px solid #000099;
+  outline-offset: 2px;
+}
+
 nav ul {
   display: flex;
   gap: 8px;
@@ -100,4 +109,16 @@ input[type="number"] {
   padding: 16px;
   text-align: center;
   font-weight: 600;
+}
+
+#categorias li:hover {
+  background-color: #e6e6e6;
+}
+
+label[for="nombre-producto"]::after,
+label[for="precio-producto"]::after,
+label[for="cantidad-producto"]::after {
+  content: " *";
+  color: #b00020;
+  font-weight: 700;
 }
