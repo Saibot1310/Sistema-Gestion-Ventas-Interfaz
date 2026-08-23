@@ -25,6 +25,13 @@ footer {
   margin-bottom: 8px;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
 nav a {
   padding: 4px 8px;
   color: #0000ff;
