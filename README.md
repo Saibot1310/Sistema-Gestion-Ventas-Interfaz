@@ -300,3 +300,19 @@ Por medio de un servidor instalado
 - asign-self
 - orden de elementos
 - layouts con Flexbox
+
+### Módulo 11: Grid
+#### Temas
+- Grid container
+- Grid items
+- Filas y columnas
+- Grid lines
+- grid-template-rows, grid-template-columns
+- gap
+- fr
+- repeat(), minmax()
+- grid-column, grid-row
+- grid-template-areas
+- Auto-placement
+- Layouts con Grid
+- Diferencias entre Flexbox y Grid
