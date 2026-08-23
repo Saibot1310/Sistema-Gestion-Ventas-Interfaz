@@ -90,11 +90,6 @@ fieldset {
   margin-bottom: 12px;
 }
 
-input[type="number"] {
-  padding: 6px;
-  border: 1px solid #999;
-}
-
 #categorias ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -115,10 +110,40 @@ input[type="number"] {
   background-color: #e6e6e6;
 }
 
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 label[for="nombre-producto"]::after,
 label[for="precio-producto"]::after,
 label[for="cantidad-producto"]::after {
   content: " *";
   color: #b00020;
   font-weight: 700;
+}
+
+input[type="number"] {
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form p {
+  margin-bottom: 16px;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 8px;
 }
