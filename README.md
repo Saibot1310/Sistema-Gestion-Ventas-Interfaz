@@ -346,3 +346,18 @@ Por medio de un servidor instalado
 - Placeholder
 - Accesibilidad visual
 - Consistencia de componentes
+
+### Módulo 15: Responsive Design
+#### Temas
+- Responsive Design
+- Diseño adaptable
+- Viewport
+- Media queries
+- breakpoints
+- Mobile-first, Desktop-first
+- Unidades relativas
+- Imágenes responsive
+- Layouts adaptables
+- Tipografía responsive
+- Componentes responsive
+- Errores comunes
