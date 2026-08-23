@@ -325,3 +325,12 @@ Por medio de un servidor instalado
 - z-index
 - Contexto de posicionamiento
 - Errores comunes
+
+### Módulo 13: Pseudo-clases y pseudo-elementos
+#### Temas
+- Pseudo-clases
+- :hover, :focus, :focus-visible, :active, :visited, :first-child, :last-child, :nth-child(), :not()
+- :checked, :disabled
+- Pseudo-elementos
+- ::before, ::after, ::first-letter, ::first-line
+- Uso correcto de pseudo-clases y pseudo-elementos
