@@ -316,3 +316,12 @@ Por medio de un servidor instalado
 - Auto-placement
 - Layouts con Grid
 - Diferencias entre Flexbox y Grid
+
+### Módulo 12: Posicionamiento
+#### Temas
+- position
+- static, relative, absolute, fixed, sticky
+- top, right, bottom, left
+- z-index
+- Contexto de posicionamiento
+- Errores comunes
