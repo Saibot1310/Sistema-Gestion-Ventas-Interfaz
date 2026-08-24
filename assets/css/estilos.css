@@ -2,6 +2,7 @@
   --color-foco: #000099;
   --radio-chico: 6px;
   --radio-grande: 8px;
+  --duration-transicion: 200ms;
 }
 
 * {
@@ -43,6 +44,7 @@ nav a {
   color: #0000ff;
   font-weight: 600;
   text-decoration: none;
+  transition: color var(--duration-transicion) ease;
 }
 
 nav a:hover {
@@ -115,10 +117,12 @@ fieldset {
   padding: 16px;
   text-align: center;
   font-weight: 600;
+  transition: background-color var(--duration-transicion) ease, transform var(--duration-transicion) ease;
 }
 
 #categorias li:hover {
   background-color: #e6e6e6;
+  transform: translateY(-2px);
 }
 
 form p {
@@ -157,6 +161,7 @@ input[type="number"] {
   border: 1px solid #999;
   border-radius: var(--radio-chico);
   font-size: 1rem;
+  transition: border-color var(--duration-transicion) ease;
 }
 
 input[type="text"]::placeholder,
@@ -193,6 +198,7 @@ button[type="submit"] {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: border-color var(--duration-transicion) ease;
 }
 
 button[type="submit"]:hover {
@@ -216,4 +222,10 @@ button[type="submit"]:focus-visible {
   nav ul {
     flex-wrap: wrap;
   };
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-transicion: 0.01ms;
+  }
 }
