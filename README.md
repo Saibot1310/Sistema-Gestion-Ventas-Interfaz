@@ -361,3 +361,15 @@ Por medio de un servidor instalado
 - Tipografía responsive
 - Componentes responsive
 - Errores comunes
+
+### Módulo 16: Variables y funciones CSS
+#### Temas
+- Custom properties
+- --variable
+- var()
+- Scope de variables
+- Variables globales y locales
+- Temas visuales
+- Reutilización
+- Funciones CSS
+- calc(), min(), max(), clamp()
