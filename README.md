@@ -373,3 +373,19 @@ Por medio de un servidor instalado
 - Reutilización
 - Funciones CSS
 - calc(), min(), max(), clamp()
+
+### Módulo 17: Transiciones y animaciones
+#### Temas
+- transition
+- tranformation
+- translate, scale, rotate, skew
+- animation
+- keyframes
+- duración
+- Timing functions
+- Delay
+- Iteraciones
+- Estados visuales
+- Microinteracciones
+- Uso responsable de animaciones
+- prefers-reduced-motion
