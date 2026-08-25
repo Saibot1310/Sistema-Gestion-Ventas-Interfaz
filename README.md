@@ -432,3 +432,19 @@ Por medio de un servidor instalado
 - Global scope en el navegador
 - JavaScript y Web APIs
 - Diferencias entre JavaScript y APIs del navegador
+
+### Módulo 2: Introducción al DOM
+#### Temas
+- ¿Qué es el DOM?
+- Por qué existe
+- Relación entre HTML y DOM
+- Documento HTML
+- Árbol DOM
+- Nodos y elementos
+- Document
+- Window
+- Node
+- Element
+- Estructura jerárquica del DOM
+- Padres, hijos y descendientes
+- Representación del documento
