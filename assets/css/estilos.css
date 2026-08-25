@@ -216,7 +216,7 @@ button[type="submit"]:focus-visible {
 @media (max-width: 480px) {
   nav ul {
     flex-wrap: wrap;
-  };
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
