@@ -1,7 +1,7 @@
-# Estructura de un Sistema de Gestión de Ventas
+# Aplicación web de gestión de ventas
 
 ## Objetivo
-Construir una estructura en HTML para generar una interfaz web que permita representar información de un sisteme de gestión de ventas. Esta estructura servirá como base para el desarrollo de un sistema más completo en el futuro y debe contener estructura, contenido, formularios, tablas, semánitica y accesbilidad. Diseñar una presentación visual básica utilizando CSS para mejorar la experiencia del usuario y la estética de la interfaz.
+Construir una estructura en HTML para generar una interfaz web que permita representar información de un sisteme de gestión de ventas. Esta estructura servirá como base para el desarrollo de un sistema más completo en el futuro y debe contener estructura, contenido, formularios, tablas, semánitica y accesbilidad. Diseñar una presentación visual básica utilizando CSS para mejorar la experiencia del usuario y la estética de la interfaz. Implementar dinamismo e interactividad mediante JavaScript para mejorar la funcionalidad de la interfaz y permitir una experiencia de usuario más fluida y atractiva.
 
 ## Ejecución
 De manera local
@@ -416,3 +416,19 @@ Por medio de un servidor instalado
 - CSS inválido
 - Optimización básica
 - Manteniblidad
+
+## Etapa 4: JavaScript - DOM
+
+### Módulo 1: JavaScript en el navegador
+#### Temas
+- JavaScript en el navegador
+- JavaScript fuera del navegador
+- Script HTML
+- Elemento script
+- defer, async
+- Orden de ejecución
+- Contexto del navegador
+- Window y Document
+- Global scope en el navegador
+- JavaScript y Web APIs
+- Diferencias entre JavaScript y APIs del navegador
