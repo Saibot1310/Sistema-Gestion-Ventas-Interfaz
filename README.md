@@ -403,3 +403,16 @@ Por medio de un servidor instalado
 - Introducción a BEM
 - Refactorización de CSS
 - Consistencia visual
+
+### Módulo 19: Calidad, depuración y optimización de CSS
+#### Temas
+- DevTools
+- Inspección de elementos y estilos
+- Box Model en DevTools
+- Identificación de reglas aplicadas
+- Diagnóstico de problemas visuales
+- Problemas de especificidad, herencia y overflow
+- Responsive debugging
+- CSS inválido
+- Optimización básica
+- Manteniblidad
