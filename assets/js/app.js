@@ -1,0 +1,1 @@
+console.log("app.js cargado - documento listo:", document.readyState)
