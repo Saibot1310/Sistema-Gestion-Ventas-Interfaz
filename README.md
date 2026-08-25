@@ -389,3 +389,17 @@ Por medio de un servidor instalado
 - Microinteracciones
 - Uso responsable de animaciones
 - prefers-reduced-motion
+
+### Módulo 18: Arquitectura y organización de CSS
+#### Temas
+- Organización de archivos CSS
+- Organización de componentes
+- Reutilización
+- Convención de nombres
+- CSS mantenible
+- CSS escalable
+- Componentes visuales
+- Evitar !important y estilos excesivamente específicos
+- Introducción a BEM
+- Refactorización de CSS
+- Consistencia visual
