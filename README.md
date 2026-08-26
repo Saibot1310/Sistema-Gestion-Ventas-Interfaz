@@ -462,3 +462,15 @@ Por medio de un servidor instalado
 - Selección de un elemento
 - Selección de múltiples elementos
 - Buenas prácticas de selección
+
+### Módulo 4: Manipulación del contenido
+#### Temas
+- textContent
+- innerText
+- innerHTML
+- Diferencias
+- Lectura y modificación de contenido
+- Inserción de HTML
+- Riesgos de innerHTML
+- Creación segura de contenido
+- Cuándo utilizar cada mecanismo
