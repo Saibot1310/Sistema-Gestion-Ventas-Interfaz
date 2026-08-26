@@ -474,3 +474,21 @@ Por medio de un servidor instalado
 - Riesgos de innerHTML
 - Creación segura de contenido
 - Cuándo utilizar cada mecanismo
+
+## Módulo 5: Manipulación de atributos y propiedades
+#### Temas
+- getAttribute
+- setAttribute
+- removeAttribute
+- hasAttribute
+- Atributos HTML
+- Propiedades DOM
+- className
+- id
+- value
+- checked
+- disabled
+- hidden
+- data-*
+- dataset
+- Diferencias entre atributos y propiedades
