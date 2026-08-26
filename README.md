@@ -492,3 +492,13 @@ Por medio de un servidor instalado
 - data-*
 - dataset
 - Diferencias entre atributos y propiedades
+
+## Módulo 6: Clases y estilos
+#### Temas
+- classList
+- add, remove, toggle, contains, replace
+- Gestión de estados mediantes clases
+- style
+- Estilos inline desde JavaScript
+- Cuando modificar clases y estilos correctamente
+- Separación de responsabilidades entre CSS y JavaScript
