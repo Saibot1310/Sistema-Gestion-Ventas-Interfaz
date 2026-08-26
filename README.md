@@ -502,3 +502,19 @@ Por medio de un servidor instalado
 - Estilos inline desde JavaScript
 - Cuando modificar clases y estilos correctamente
 - Separación de responsabilidades entre CSS y JavaScript
+
+## Módulo 7: Creación y eliminación de elementos
+#### Temas
+- createElement
+- CreateTextNode
+- append
+- appendChild
+- before
+- after
+- remove
+- replaceWith
+- Fragmentos
+- DocumentFragment
+- Construcción dinámica de interfaces
+- Renderizado de listas
+- Creación de componentes básicos
