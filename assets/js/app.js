@@ -1,13 +1,20 @@
 console.log("app.js cargado - documento listo:", document.readyState);
 
 const contenidoPrincipal = document.getElementById("contenido-principal");
-console.log("Contenido principal:", contenidoPrincipal);
-
-const primerEnlaceNav = document.querySelector("nav a");
-console.log("Primer enlace de navegación:", primerEnlaceNav);
-
 const categorias = document.querySelectorAll("#categorias li");
-console.log("Cantidad de categorias encontradas:", categorias.length);
-
 const disponibles = document.getElementsByClassName("disponible");
-console.log("Cantidad de productos disponibles:", disponibles.length);
+const titulo = document.querySelector("h1");
+
+if (categorias.length > 0) {
+  categorias.forEach(li => {
+    li.textContent = `📦 ${li.textContent}`;
+  })
+}
+
+const resumenStock = document.getElementById("resumen-stock");
+
+if (resumenStock) {
+  const totalProductos = document.querySelectorAll("#productos tbody tr").length;
+  const totalDisponibles = disponibles.length;
+  resumenStock.innerHTML = `<strong>${totalDisponibles}</strong> de <strong>${totalProductos}</strong> productos disponibles`;
+}
