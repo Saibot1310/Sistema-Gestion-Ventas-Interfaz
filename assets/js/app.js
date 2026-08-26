@@ -8,9 +8,7 @@ const resumenStock = document.getElementById("resumen-stock");
 const camposObligatorios = document.querySelectorAll("#agregar-producto input[required]");
 const botonGuardar = document.querySelector("#agregar-producto button[type='submit']");
 
-document.querySelectorAll("#productos tbody tr").forEach(fila => {
-  console.log(`Fila detectada - id de producto: ${fila.dataset.idProducto}`);
-})
+const filasProductos = document.querySelectorAll("#productos tbody tr");
 
 if (categorias.length > 0) {
   categorias.forEach(li => {
@@ -32,4 +30,18 @@ if (camposObligatorios.length > 0) {
 
 if (botonGuardar) {
   console.log("Botón de guardar detectado, disabled actual:", botonGuardar.disabled);
+}
+
+if (filasProductos.length > 0) {
+  filasProductos.forEach(fila => {
+    const celdaStock = fila.querySelector("td:last-child");
+    if (!celdaStock) return;
+
+    const estaAgotado = celdaStock.textContent.trim() === "Agotado";
+
+    fila.classList.toggle("agotado", estaAgotado);
+    fila.classList.toggle("disponible", !estaAgotado);
+
+    console.log(`Producto #${fila.dataset.idProducto} -> esta sincronizado:`, [...fila.classList]);
+  });
 }
