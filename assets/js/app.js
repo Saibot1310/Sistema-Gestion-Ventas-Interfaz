@@ -9,12 +9,54 @@ const camposObligatorios = document.querySelectorAll("#agregar-producto input[re
 const botonGuardar = document.querySelector("#agregar-producto button[type='submit']");
 
 const filasProductos = document.querySelectorAll("#productos tbody tr");
+const tbodyProductos = document.querySelector("#productos tbody");
+
+const productos = [
+  { id: 1, nombre: "Auriculares inalámbricos", precio: "$45.000", stock: "Disponible" },
+  { id: 2, nombre: "Lámpara de escritorio LED", precio: "$12.500", stock: "Disponible" },
+  { id: 3, nombre: "Zapatillas urbanas talle 42", precio: "$38.000", stock: "Agotado" },
+  { id: 4, nombre: "Cafetera eléctrica", precio: "$27.000", stock: "Disponible" },
+  { id: 5, nombre: "Mochila impermeable", precio: "$19.900", stock: "Agotado" },
+]
 
 if (categorias.length > 0) {
   categorias.forEach(li => {
     li.textContent = `📦 ${li.textContent}`;
   })
 }
+
+function crearFilaProducto({ id, nombre, precio, stock }) {
+  const fila = document.createElement("tr");
+
+  fila.dataset.idProducto = id;
+  fila.classList.toggle("disponible", stock === "Disponible");
+  fila.classList.toggle("agotado", stock === "Agotado");
+
+  const celdaNombre = document.createElement("th");
+  celdaNombre.scope = "row";
+  celdaNombre.textContent = nombre;
+
+  const celdaPrecio = document.createElement("td");
+  celdaPrecio.textContent = precio;
+
+  const celdaStock = document.createElement("td");
+  celdaStock.textContent = stock;
+
+  fila.append(celdaNombre, celdaPrecio, celdaStock);
+  return fila;
+}
+
+function renderizarProductos(listaProductos, tbody) {
+  if (!tbody) return;
+
+  const fragmento = document.createDocumentFragment();
+  listaProductos.forEach(producto => {
+    fragmento.append(crearFilaProducto(producto));
+  });
+  tbody.append(fragmento);
+}
+
+renderizarProductos(productos, tbodyProductos);
 
 if (resumenStock) {
   const totalProductos = document.querySelectorAll("#productos tbody tr").length;
@@ -30,18 +72,4 @@ if (camposObligatorios.length > 0) {
 
 if (botonGuardar) {
   console.log("Botón de guardar detectado, disabled actual:", botonGuardar.disabled);
-}
-
-if (filasProductos.length > 0) {
-  filasProductos.forEach(fila => {
-    const celdaStock = fila.querySelector("td:last-child");
-    if (!celdaStock) return;
-
-    const estaAgotado = celdaStock.textContent.trim() === "Agotado";
-
-    fila.classList.toggle("agotado", estaAgotado);
-    fila.classList.toggle("disponible", !estaAgotado);
-
-    console.log(`Producto #${fila.dataset.idProducto} -> esta sincronizado:`, [...fila.classList]);
-  });
 }
