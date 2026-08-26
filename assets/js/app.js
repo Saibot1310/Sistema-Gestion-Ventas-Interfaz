@@ -8,6 +8,10 @@ const resumenStock = document.getElementById("resumen-stock");
 const camposObligatorios = document.querySelectorAll("#agregar-producto input[required]");
 const botonGuardar = document.querySelector("#agregar-producto button[type='submit']");
 
+document.querySelectorAll("#productos tbody tr").forEach(fila => {
+  console.log(`Fila detectada - id de producto: ${fila.dataset.idProducto}`);
+})
+
 if (categorias.length > 0) {
   categorias.forEach(li => {
     li.textContent = `📦 ${li.textContent}`;
