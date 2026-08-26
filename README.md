@@ -448,3 +448,17 @@ Por medio de un servidor instalado
 - Estructura jerárquica del DOM
 - Padres, hijos y descendientes
 - Representación del documento
+
+### Módulo 3: Selección de elementos
+#### Temas
+- getElementById
+- getElementsByClassName
+- getElementsByTagName
+- querySelector
+- querySelectorAll
+- Selectores CSS desde JavaScript
+- HTMLCollection y NodeList
+- Diferencia entre métodos de selección
+- Selección de un elemento
+- Selección de múltiples elementos
+- Buenas prácticas de selección
