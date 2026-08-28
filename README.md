@@ -600,3 +600,14 @@ Por medio de un servidor instalado
 - Funciones de renderizado
 - Sepreción entre render y lógica
 - Optimización básica de renderizado
+
+### Módulo 14: Módulos JavaScript en el navegador
+#### Temas
+- type="module"
+- import y export
+- Módulos ES
+- Organización del código
+- Dependencias
+- Separación de responsabilidades
+- Módulos de dominio, interfaz y utilidades
+- Arquitectura del proyecto
