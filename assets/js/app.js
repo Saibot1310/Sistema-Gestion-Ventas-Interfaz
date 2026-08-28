@@ -22,7 +22,7 @@ const productos = [
 if (categorias.length > 0) {
   categorias.forEach(li => {
     li.textContent = `📦 ${li.textContent}`;
-  })
+  });
 }
 
 function crearFilaProducto({ id, nombre, precio, stock }) {
@@ -72,4 +72,39 @@ if (camposObligatorios.length > 0) {
 
 if (botonGuardar) {
   console.log("Botón de guardar detectado, disabled actual:", botonGuardar.disabled);
+}
+
+const primeraCelda = document.querySelector("#productos td");
+
+if (primeraCelda) {
+  const filaContenedora = primeraCelda.parentElement;
+  console.log("Fila encontrada, id de producto:", filaContenedora.dataset.idProducto);
+}
+
+if (tbodyProductos) {
+  console.log("Filas en el DOM:", tbodyProductos.children.length, "| Productos en el arreglo:", productos.length);
+  console.log("Primera fila", tbodyProductos.firstElementChild?.dataset.idProducto);
+  console.log("Última fila", tbodyProductos.lastElementChild?.dataset.idProducto);
+}
+
+const filaAgotada = document.querySelector("#productos tr.agotado");
+
+if (filaAgotada) {
+  console.log("Fila agotada:", filaAgotada.dataset.idProducto);
+  console.log("Fila siguiente:", filaAgotada.nextElementSibling?.dataset.idProducto ?? "no hay más fila");
+  console.log("Fila anterior:", filaAgotada.previousElementSibling?.dataset.idProducto ?? "es la primera");
+}
+
+function obtenerFilaProducto(elementoOrigen) {
+  return elementoOrigen.closest("#productos tbody tr");
+}
+
+const celdaDePrueba = document.querySelector("#productos td");
+if (celdaDePrueba) {
+  const filaObtenida = obtenerFilaProducto(celdaDePrueba);
+  console.log("closest() encontró la fila con id:", filaObtenida?.dataset.idProducto);
+}
+
+if (tbodyProductos && celdaDePrueba) {
+  console.log("¿La fila pertenece al tbody esperado?", tbodyProductos.contains(celdaDePrueba));
 }
