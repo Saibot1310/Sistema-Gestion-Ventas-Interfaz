@@ -575,3 +575,16 @@ Por medio de un servidor instalado
 - Mensajes de error
 - Estados de formularios
 - preventDefault y procesamiento de formularios
+
+### Módulo 12: Estado de la interfaz
+#### Temas
+- ¿Qué es el estado?
+- Estado de la aplicación
+- Estado de la interfaz
+- Estado derivado
+- Relación entre datos y DOM
+- Renderizado
+- Re-renderizado
+- Sincronización entre estado e interfaz
+- Separación entre datos y presentación
+- Patrones simples de gestión de estado
