@@ -518,3 +518,15 @@ Por medio de un servidor instalado
 - Construcción dinámica de interfaces
 - Renderizado de listas
 - Creación de componentes básicos
+
+## Módulo 8: Recorrido y navegación del DOM
+#### Temas
+- parentNode, parentElement
+- children, childNodes
+- firstChild, firstElementChild
+- lastChild, lastElementChild
+- nextSibling, nextElementSibling
+- previousSibling, previousElementSibling
+- closest, matches, contains
+- Recorrido del árbol
+- Relaciones entre elementos
