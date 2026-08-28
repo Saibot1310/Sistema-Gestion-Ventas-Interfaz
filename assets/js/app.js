@@ -87,13 +87,48 @@ function obtenerFilaProducto(elementoOrigen) {
 renderizarProductos(productos, tbodyProductos);
 actualizarResumenStock();
 
+const mensajesError = {
+  "nombre-producto": "Ingresa un nombre para el producto.",
+  "precio-producto": "El precio debe ser un número mayor o igual a 0.",
+  "cantidad-producto": "La cantidad en stock debe ser un número mayor o igual a 0."
+};
+
+function mostrarErrorCampo(campo) {
+  const contenedorError = document.querySelector(`[data-error-para=${campo.id}]`);
+  if (!contenedorError) return;
+
+  contenedorError.textContent = campo.validity.valid
+    ? ""
+    : (mensajesError[campo.id] ?? "Este campo no es válido");
+}
+
 if (formularioProducto) {
+  formularioProducto.addEventListener("focusout", (event) => {
+    if (!event.target.matches("input")) return;
+    mostrarErrorCampo(event.target);
+  });
+
+  formularioProducto.addEventListener("input", (event) => {
+    if (!event.target.matches("input")) return;
+    if (event.target.validity.valid) mostrarErrorCampo(event.target);
+  });
+
   formularioProducto.addEventListener("submit", function(event) {
     event.preventDefault();
-    console.log("Envío interceptado. Valores capturados (sin procesar todavía):");
-    console.log("Nombre:", document.getElementById("nombre-producto").value);
-    console.log("Precio:", document.getElementById("precio-producto").value);
-    console.log("Cantidad:", document.getElementById("cantidad-producto").value);
-    console.log("Descuento:", document.getElementById("descuento-producto").value);
+
+    const campos = [...formularioProducto.querySelectorAll("input")];
+    const camposInvalidos = campos.filter(campo => !campo.validity.valid);
+
+    camposInvalidos.forEach(mostrarErrorCampo);
+
+    if (camposInvalidos.length > 0) {
+      camposInvalidos[0].focus();
+      return;
+    }
+
+    const producto = Object.fromEntries(new FormData(formularioProducto).entries());
+    console.log("Producto listo para procesar:", producto);
+
+    formularioProducto.reset();
   });
 }
