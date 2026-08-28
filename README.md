@@ -624,3 +624,20 @@ Por medio de un servidor instalado
 - URLSearchParams
 - Clipboard
 - Introducción al entorno proporcionado por el navegador
+
+### Módulo 16: Fetch y comunicación con recursos externos
+#### Temas
+- Fetch API
+- Request y Response
+- Promesas
+- JSON
+- GET
+- POST
+- Headers
+- Body
+- Status code
+- Manejo de errores
+- async/await
+- Estados de carga
+- Estados de error
+- Renderizado de respuestas
