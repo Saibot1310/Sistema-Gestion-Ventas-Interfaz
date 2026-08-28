@@ -559,3 +559,19 @@ Por medio de un servidor instalado
 - Casos de uso
 - Problemas frecuentes
 - Arquitectura de eventos
+
+## Módulo 11: Formularios e interacción con el usuario
+#### Temas
+- Acceso a formularios
+- submit
+- input
+- change
+- focus
+- blur
+- Lectura de valores
+- FormData
+- Validación HTML
+- Validación mediante JavaScript
+- Mensajes de error
+- Estados de formularios
+- preventDefault y procesamiento de formularios
