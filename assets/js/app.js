@@ -1,5 +1,3 @@
-console.log("app.js cargado - documento listo:", document.readyState);
-
 const contenidoPrincipal = document.getElementById("contenido-principal");
 const categorias = document.querySelectorAll("#categorias li");
 const disponibles = document.getElementsByClassName("disponible");
@@ -10,6 +8,8 @@ const botonGuardar = document.querySelector("#agregar-producto button[type='subm
 
 const filasProductos = document.querySelectorAll("#productos tbody tr");
 const tbodyProductos = document.querySelector("#productos tbody");
+
+const formularioProducto = document.querySelector("#agregar-producto form");
 
 const productos = [
   { id: 1, nombre: "Auriculares inalámbricos", precio: "$45.000", stock: "Disponible" },
@@ -42,8 +42,29 @@ function crearFilaProducto({ id, nombre, precio, stock }) {
   const celdaStock = document.createElement("td");
   celdaStock.textContent = stock;
 
-  fila.append(celdaNombre, celdaPrecio, celdaStock);
+  const celdaAcciones = document.createElement("td");
+  const botonEliminar = document.createElement("button");
+  botonEliminar.type = "button";
+  botonEliminar.className = "btn-eliminar";
+  botonEliminar.textContent = "Eliminar";
+  botonEliminar.dataset.idProducto = id;
+
+  botonEliminar.addEventListener("click", function(event) {
+    const filaAEliminar = obtenerFilaProducto(event.target);
+    filaAEliminar.remove();
+    actualizarResumenStock();
+  });
+
+  celdaAcciones.append(botonEliminar);
+  fila.append(celdaNombre, celdaPrecio, celdaStock, celdaAcciones);
   return fila;
+}
+
+function actualizarResumenStock() {
+  if (!resumenStock) return;
+  const totalProductos = document.querySelectorAll("#productos tbody tr").length;
+  const totalDisponibles = document.getElementsByClassName("disponible").length;
+  resumenStock.innerHTML = `<strong>${totalDisponibles}</strong> de <strong>${totalProductos}</strong>`; 
 }
 
 function renderizarProductos(listaProductos, tbody) {
@@ -56,55 +77,19 @@ function renderizarProductos(listaProductos, tbody) {
   tbody.append(fragmento);
 }
 
-renderizarProductos(productos, tbodyProductos);
-
-if (resumenStock) {
-  const totalProductos = document.querySelectorAll("#productos tbody tr").length;
-  const totalDisponibles = disponibles.length;
-  resumenStock.innerHTML = `<strong>${totalDisponibles}</strong> de <strong>${totalProductos}</strong> productos disponibles`;
-}
-
-if (camposObligatorios.length > 0) {
-  camposObligatorios.forEach(campo => {
-    console.log(`${campo.id} es obligatorio:`, campo.hasAttribute("required"));
-  })
-}
-
-if (botonGuardar) {
-  console.log("Botón de guardar detectado, disabled actual:", botonGuardar.disabled);
-}
-
-const primeraCelda = document.querySelector("#productos td");
-
-if (primeraCelda) {
-  const filaContenedora = primeraCelda.parentElement;
-  console.log("Fila encontrada, id de producto:", filaContenedora.dataset.idProducto);
-}
-
-if (tbodyProductos) {
-  console.log("Filas en el DOM:", tbodyProductos.children.length, "| Productos en el arreglo:", productos.length);
-  console.log("Primera fila", tbodyProductos.firstElementChild?.dataset.idProducto);
-  console.log("Última fila", tbodyProductos.lastElementChild?.dataset.idProducto);
-}
-
-const filaAgotada = document.querySelector("#productos tr.agotado");
-
-if (filaAgotada) {
-  console.log("Fila agotada:", filaAgotada.dataset.idProducto);
-  console.log("Fila siguiente:", filaAgotada.nextElementSibling?.dataset.idProducto ?? "no hay más fila");
-  console.log("Fila anterior:", filaAgotada.previousElementSibling?.dataset.idProducto ?? "es la primera");
-}
-
 function obtenerFilaProducto(elementoOrigen) {
   return elementoOrigen.closest("#productos tbody tr");
 }
+renderizarProductos(productos, tbodyProductos);
+actualizarResumenStock();
 
-const celdaDePrueba = document.querySelector("#productos td");
-if (celdaDePrueba) {
-  const filaObtenida = obtenerFilaProducto(celdaDePrueba);
-  console.log("closest() encontró la fila con id:", filaObtenida?.dataset.idProducto);
-}
-
-if (tbodyProductos && celdaDePrueba) {
-  console.log("¿La fila pertenece al tbody esperado?", tbodyProductos.contains(celdaDePrueba));
+if (formularioProducto) {
+  formularioProducto.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log("Envío interceptado. Valores capturados (sin procesar todavía):");
+    console.log("Nombre:", document.getElementById("nombre-producto").value);
+    console.log("Precio:", document.getElementById("precio-producto").value);
+    console.log("Cantidad:", document.getElementById("cantidad-producto").value);
+    console.log("Descuento:", document.getElementById("descuento-producto").value);
+  });
 }
