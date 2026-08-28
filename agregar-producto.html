@@ -35,21 +35,25 @@
             <p>
               <label for="nombre-producto">Nombre</label>
               <input type="text" id="nombre-producto" name="nombre" placeholder="Ej: Auriculares inalámbricos" required>
+              <span class="mensaje-error" data-error-para="nombre-producto"></span>
             </p>
 
             <p>
               <label for="precio-producto">Precio</label>
               <input type="number" id="precio-producto" name="precio" min="0" step="1" required>
+              <span class="mensaje-error" data-error-para="precio-producto"></span>
             </p>
 
             <p>
               <label for="cantidad-producto">Cantidad en stock</label>
               <input type="number" id="cantidad-producto" name="cantidad" min="0" step="1" required>
+              <span class="mensaje-error" data-error-para="cantidad-producto"></span>
             </p>
 
             <p>
               <label for="descuento-producto">Descuento (%)</label>
               <input type="number" id="descuento-producto" name="descuento" min="0" max="100" step="1" value="0">
+              <span class="mensaje-error" data-error-para="descuento-producto"></span>
             </p>
           </fieldset>
 
