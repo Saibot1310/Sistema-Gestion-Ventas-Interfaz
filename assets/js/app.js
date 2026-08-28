@@ -45,19 +45,23 @@ function crearFilaProducto({ id, nombre, precio, stock }) {
   const celdaAcciones = document.createElement("td");
   const botonEliminar = document.createElement("button");
   botonEliminar.type = "button";
-  botonEliminar.className = "btn-eliminar";
   botonEliminar.textContent = "Eliminar";
-  botonEliminar.dataset.idProducto = id;
-
-  botonEliminar.addEventListener("click", function(event) {
-    const filaAEliminar = obtenerFilaProducto(event.target);
-    filaAEliminar.remove();
-    actualizarResumenStock();
-  });
-
+  botonEliminar.classList.add("btn-eliminar");
   celdaAcciones.append(botonEliminar);
+
   fila.append(celdaNombre, celdaPrecio, celdaStock, celdaAcciones);
   return fila;
+}
+
+if (tbodyProductos) {
+  tbodyProductos.addEventListener("click", (event) => {
+    const botonEliminar = event.target.closest("button.btn-eliminar");
+    if (!botonEliminar) return;
+
+    const fila = obtenerFilaProducto(botonEliminar);
+    fila.remove();
+    actualizarResumenStock();
+  });
 }
 
 function actualizarResumenStock() {
