@@ -588,3 +588,15 @@ Por medio de un servidor instalado
 - Sincronización entre estado e interfaz
 - Separación entre datos y presentación
 - Patrones simples de gestión de estado
+
+### Módulo 13: Renderizado dinámico
+#### Temas
+- Renderizado de datos
+- Renderizado de listas
+- Templates
+- Creación dinámica de elementos
+- Actualización parcial y completa del DOM
+- Re-renderizado
+- Funciones de renderizado
+- Sepreción entre render y lógica
+- Optimización básica de renderizado
