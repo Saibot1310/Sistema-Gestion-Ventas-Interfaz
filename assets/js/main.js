@@ -1,3 +1,4 @@
+import { obtenerProductosExternos } from "./api.js";
 import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, generarIdProducto, productos, reemplazarProductos } from "./dominio.js";
 import { actualizarEstadoBotonGuardar, mostrarErrorCampo } from "./formulario.js";
 import { marcarPaginaActiva } from "./navegacion.js";
@@ -10,6 +11,8 @@ const resumenStock = document.getElementById("resumen-stock");
 const botonGuardar = document.querySelector("#agregar-producto button[type='submit']");
 const tbodyProductos = document.querySelector("#productos tbody");
 const formularioProducto = document.querySelector("#agregar-producto form");
+const botonCargarExterno = document.getElementById("cargar-externo");
+const estadoCarga = document.getElementById("estado-carga");
 
 if (categorias.length > 0) {
   categorias.forEach(li => {
@@ -29,6 +32,21 @@ if (tbodyProductos) {
 
     reemplazarProductos(eliminarProductoPorId(productos, id));
     renderizarTabla(productos, tbodyProductos, resumenStock);
+  });
+}
+
+if (botonCargarExterno) {
+  botonCargarExterno.addEventListener("click", async () => {
+    estadoCarga.textContent = "Cargando productos...";
+
+    try {
+      const productosExternos = await obtenerProductosExternos("https://fakestoreapi.com/products");
+      estadoCarga.textContent = "";
+      renderizarTabla(productosExternos, tbodyProductos, resumenStock);
+    } catch (error) {
+      estadoCarga.textContent = "No se pudierno cargar los productos. Intenta nuevamente";
+      console.error(error);
+    }
   });
 }
 
