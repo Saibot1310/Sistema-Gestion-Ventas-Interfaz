@@ -184,6 +184,14 @@ input:focus:valid {
   border-color: #008000
 }
 
+.mensaje-error {
+  display: block;
+  min-height: 1.2em;
+  color: #b00020;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
 button[type="submit"] {
   background-color: #0000ff;
   color: #fff;
