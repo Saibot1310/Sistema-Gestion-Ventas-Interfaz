@@ -530,3 +530,20 @@ Por medio de un servidor instalado
 - closest, matches, contains
 - Recorrido del árbol
 - Relaciones entre elementos
+
+## Módulo 9: Eventos
+#### Temas
+- Eventos
+- Event listeners
+- addEventListener, removeEventListener
+- Eventos de mouse
+- Eventos de teclado
+- Eventos de formulario
+- Eventos de ventana
+- Objeto Event
+- event.target
+- event.currentTarget
+- preventDefault
+- stopPropagation
+- Eventos comunes
+- Buenas prácticas
