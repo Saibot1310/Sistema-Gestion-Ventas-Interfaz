@@ -1,4 +1,4 @@
-import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, productos, reemplazarProductos } from "./dominio.js";
+import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, generarIdProducto, productos, reemplazarProductos } from "./dominio.js";
 import { actualizarEstadoBotonGuardar, mostrarErrorCampo } from "./formulario.js";
 import { renderizarProductos, renderizarTabla } from "./render.js";
 
