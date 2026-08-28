@@ -547,3 +547,15 @@ Por medio de un servidor instalado
 - stopPropagation
 - Eventos comunes
 - Buenas prácticas
+
+## Módulo 10: Propagación de eventos
+#### Temas
+- Event flow
+- Capturing
+- Target
+- Bubbling
+- stopPropagation
+- Ventajas de event delegation
+- Casos de uso
+- Problemas frecuentes
+- Arquitectura de eventos
