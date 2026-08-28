@@ -475,7 +475,7 @@ Por medio de un servidor instalado
 - Creación segura de contenido
 - Cuándo utilizar cada mecanismo
 
-## Módulo 5: Manipulación de atributos y propiedades
+### Módulo 5: Manipulación de atributos y propiedades
 #### Temas
 - getAttribute
 - setAttribute
@@ -493,7 +493,7 @@ Por medio de un servidor instalado
 - dataset
 - Diferencias entre atributos y propiedades
 
-## Módulo 6: Clases y estilos
+### Módulo 6: Clases y estilos
 #### Temas
 - classList
 - add, remove, toggle, contains, replace
@@ -503,7 +503,7 @@ Por medio de un servidor instalado
 - Cuando modificar clases y estilos correctamente
 - Separación de responsabilidades entre CSS y JavaScript
 
-## Módulo 7: Creación y eliminación de elementos
+### Módulo 7: Creación y eliminación de elementos
 #### Temas
 - createElement
 - CreateTextNode
@@ -519,7 +519,7 @@ Por medio de un servidor instalado
 - Renderizado de listas
 - Creación de componentes básicos
 
-## Módulo 8: Recorrido y navegación del DOM
+### Módulo 8: Recorrido y navegación del DOM
 #### Temas
 - parentNode, parentElement
 - children, childNodes
@@ -531,7 +531,7 @@ Por medio de un servidor instalado
 - Recorrido del árbol
 - Relaciones entre elementos
 
-## Módulo 9: Eventos
+### Módulo 9: Eventos
 #### Temas
 - Eventos
 - Event listeners
@@ -548,7 +548,7 @@ Por medio de un servidor instalado
 - Eventos comunes
 - Buenas prácticas
 
-## Módulo 10: Propagación de eventos
+### Módulo 10: Propagación de eventos
 #### Temas
 - Event flow
 - Capturing
@@ -560,7 +560,7 @@ Por medio de un servidor instalado
 - Problemas frecuentes
 - Arquitectura de eventos
 
-## Módulo 11: Formularios e interacción con el usuario
+### Módulo 11: Formularios e interacción con el usuario
 #### Temas
 - Acceso a formularios
 - submit
