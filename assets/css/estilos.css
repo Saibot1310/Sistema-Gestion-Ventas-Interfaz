@@ -239,6 +239,11 @@ button[type="submit"]:focus-visible {
   outline-offset: 2px;
 }
 
+#estado-carga {
+  font-style: italic;
+  color: #555;
+}
+
 #productos {
   overflow-x: auto;
 }
