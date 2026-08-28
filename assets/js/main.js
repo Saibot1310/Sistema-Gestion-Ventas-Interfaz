@@ -1,6 +1,9 @@
 import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, generarIdProducto, productos, reemplazarProductos } from "./dominio.js";
 import { actualizarEstadoBotonGuardar, mostrarErrorCampo } from "./formulario.js";
+import { marcarPaginaActiva } from "./navegacion.js";
 import { renderizarProductos, renderizarTabla } from "./render.js";
+
+marcarPaginaActiva();
 
 const categorias = document.querySelectorAll("#categorias li");
 const resumenStock = document.getElementById("resumen-stock");
