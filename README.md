@@ -611,3 +611,16 @@ Por medio de un servidor instalado
 - Separación de responsabilidades
 - Módulos de dominio, interfaz y utilidades
 - Arquitectura del proyecto
+
+### Módulo 15: Web APIs fundamentales
+#### Temas
+- Web APIs
+- Window y Document
+- Console
+- Location
+- History
+- Navigator
+- URL
+- URLSearchParams
+- Clipboard
+- Introducción al entorno proporcionado por el navegador
