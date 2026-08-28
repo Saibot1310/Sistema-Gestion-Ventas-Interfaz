@@ -1,17 +1,10 @@
-const contenidoPrincipal = document.getElementById("contenido-principal");
 const categorias = document.querySelectorAll("#categorias li");
-const disponibles = document.getElementsByClassName("disponible");
-const titulo = document.querySelector("h1");
 const resumenStock = document.getElementById("resumen-stock");
-const camposObligatorios = document.querySelectorAll("#agregar-producto input[required]");
 const botonGuardar = document.querySelector("#agregar-producto button[type='submit']");
-
-const filasProductos = document.querySelectorAll("#productos tbody tr");
 const tbodyProductos = document.querySelector("#productos tbody");
-
 const formularioProducto = document.querySelector("#agregar-producto form");
 
-const productos = [
+let productos = [
   { id: 1, nombre: "Auriculares inalámbricos", precio: "$45.000", stock: "Disponible" },
   { id: 2, nombre: "Lámpara de escritorio LED", precio: "$12.500", stock: "Disponible" },
   { id: 3, nombre: "Zapatillas urbanas talle 42", precio: "$38.000", stock: "Agotado" },
@@ -59,8 +52,10 @@ if (tbodyProductos) {
     if (!botonEliminar) return;
 
     const fila = obtenerFilaProducto(botonEliminar);
-    fila.remove();
-    actualizarResumenStock();
+    const id = Number(fila.dataset.idProducto);
+
+    productos = eliminarProductoPorId(productos, id);
+    renderizarTabla();
   });
 }
 
@@ -84,6 +79,28 @@ function renderizarProductos(listaProductos, tbody) {
 function obtenerFilaProducto(elementoOrigen) {
   return elementoOrigen.closest("#productos tbody tr");
 }
+
+function renderizarTabla() {
+  if (!tbodyProductos) return;
+
+  tbodyProductos.innerHTML = "";
+  renderizarProductos(productos, tbodyProductos);
+  actualizarResumenStock();
+}
+
+function agregarProducto(listaProductos, productoNuevo) {
+  return [...listaProductos, productoNuevo];
+}
+
+function eliminarProductoPorId(listaProductos, id) {
+  return listaProductos.filter(producto => producto.id !== id);
+}
+
+function generarIdProducto(listaProductos) {
+  const maximoActual = listaProductos.reduce((max, producto) => Math.max(max, producto.id), 0);
+  return maximoActual + 1;
+}
+
 renderizarProductos(productos, tbodyProductos);
 actualizarResumenStock();
 
@@ -126,9 +143,27 @@ if (formularioProducto) {
       return;
     }
 
-    const producto = Object.fromEntries(new FormData(formularioProducto).entries());
-    console.log("Producto listo para procesar:", producto);
+    const datosFormulario = Object.fromEntries(new FormData(formularioProducto).entries());
+
+    const productoNuevo = {
+      id: generarIdProducto(productos),
+      nombre: datosFormulario.nombre,
+      precio: datosFormulario.precio,
+      stock: Number(datosFormulario.cantidad) > 0 ? "Disponible" : "Agotado"
+    };
+
+    productos = agregarProducto(productos, productoNuevo);
+    renderizarTabla();
 
     formularioProducto.reset();
+    actualizarEstadoBotonGuardar();
   });
+
+  function actualizarEstadoBotonGuardar() {
+    const formularioValido = formularioProducto.checkValidity();
+    botonGuardar.disabled = !formularioValido;
+  }
+
+  formularioProducto.addEventListener("input", actualizarEstadoBotonGuardar);
+  actualizarEstadoBotonGuardar();
 }
