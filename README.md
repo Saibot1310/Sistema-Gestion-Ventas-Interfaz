@@ -641,3 +641,14 @@ Por medio de un servidor instalado
 - Estados de carga
 - Estados de error
 - Renderizado de respuestas
+
+### Módulo 17: Almacenamiento en el navegador
+#### Temas
+- LocalStorage
+- SessionStorage
+- setItem, getItem, removeItem, clear
+- JSON.stringify y JSON.parse
+- Persistencia
+- Limitaciones
+- Casos de uso
+- Consideraciones de seguridad
