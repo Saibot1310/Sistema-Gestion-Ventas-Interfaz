@@ -1,0 +1,27 @@
+{
+  "name": "sistema-gestion-ventas",
+  "version": "1.0.0",
+  "description": "Construir una estructura en HTML para generar una interfaz web que permita representar información de un sisteme de gestión de ventas. Esta estructura servirá como base para el desarrollo de un sistema más completo en el futuro y debe contener estructura, contenido, formularios, tablas, semánitica y accesbilidad. Diseñar una presentación visual básica utilizando CSS para mejorar la experiencia del usuario y la estética de la interfaz. Implementar dinamismo e interactividad mediante JavaScript para mejorar la funcionalidad de la interfaz y permitir una experiencia de usuario más fluida y atractiva.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saibot1310/Sistema-Gestion-Ventas-Interfaz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Saibot1310/Sistema-Gestion-Ventas-Interfaz/issues"
+  },
+  "homepage": "https://github.com/Saibot1310/Sistema-Gestion-Ventas-Interfaz#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
