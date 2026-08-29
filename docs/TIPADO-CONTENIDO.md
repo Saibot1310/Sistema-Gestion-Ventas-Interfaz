@@ -25,3 +25,14 @@
 - Opciones fundamentales
 - target, module, rootDir, outDir, strict, sourceMap, include, exclude
 - Desarrollo vs producción
+
+## Módulo 3: Tipos básicos
+### Temas
+- string, number, boolean
+- bigint, symbol, null, undefined
+- Arrays y tuplas
+- Objetos
+- Tipado explícito
+- Inferencia de tipos
+- Cuando declarar tipos explícitamente
+- Cuando confiar en la inferencia
