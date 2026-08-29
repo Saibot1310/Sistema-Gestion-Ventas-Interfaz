@@ -1,9 +1,9 @@
 import { cargarProductos, guardarProductos } from "./almacenamiento.js";
 import { obtenerProductosExternos } from "./api.js";
-import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, generarIdProducto, productos, reemplazarProductos } from "./dominio.js";
+import { agregarProducto, crearProductoDesdeFormulario, eliminarProductoPorId, productos, reemplazarProductos } from "./dominio.js";
 import { actualizarEstadoBotonGuardar, mostrarErrorCampo } from "./formulario.js";
 import { marcarPaginaActiva } from "./navegacion.js";
-import { renderizarProductos, renderizarTabla } from "./render.js";
+import { renderizarTabla } from "./render.js";
 
 marcarPaginaActiva();
 
@@ -27,7 +27,7 @@ if (categorias.length > 0) {
 }
 
 if (tbodyProductos) {
-  renderizarProductos(productos, tbodyProductos);
+  renderizarTabla(productos, tbodyProductos, resumenStock);
 
   tbodyProductos.addEventListener("click", (event) => {
     const botonEliminar = event.target.closest("button.btn-eliminar");
@@ -84,12 +84,7 @@ if (formularioProducto) {
 
     const datosFormulario = Object.fromEntries(new FormData(formularioProducto).entries());
 
-    const productoNuevo = {
-      id: generarIdProducto(productos),
-      nombre: datosFormulario.nombre,
-      precio: Number(datosFormulario.precio),
-      stock: calcularEstadoStock(datosFormulario.cantidad),
-    };
+    const productoNuevo = crearProductoDesdeFormulario(datosFormulario, productos);
 
     reemplazarProductos(agregarProducto(productos, productoNuevo));
     guardarProductos(productos);

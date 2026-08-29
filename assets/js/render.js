@@ -36,10 +36,10 @@ export function renderizarProductos(listaProductos, tbody) {
   tbody.append(fragmento);
 }
 
-export function actualizarResumenStock(resumenStock) {
+export function actualizarResumenStock(listaProductos, resumenStock) {
   if (!resumenStock) return;
-  const totalProductos = document.querySelectorAll("#productos tbody tr").length;
-  const totalDisponibles = document.getElementsByClassName("disponible").length;
+  const totalProductos = listaProductos.length
+  const totalDisponibles = listaProductos.filter(producto => producto.stock === "Disponible").length;
   resumenStock.innerHTML = `<strong>${totalDisponibles}</strong> de <strong>${totalProductos}</strong>`; 
 }
 
@@ -48,5 +48,5 @@ export function renderizarTabla(listaProductos, tbody, resumenStock) {
 
   tbody.innerHTML = "";
   renderizarProductos(listaProductos, tbody);
-  actualizarResumenStock(resumenStock);
+  actualizarResumenStock(listaProductos, resumenStock);
 }

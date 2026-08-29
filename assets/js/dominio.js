@@ -26,3 +26,12 @@ export function calcularEstadoStock(cantidad) {
 export function reemplazarProductos(nuevaLista) {
   productos = nuevaLista;
 }
+
+export function crearProductoDesdeFormulario(datosFormulario, listaProductos) {
+  return {
+    id: generarIdProducto(listaProductos),
+    nombre: datosFormulario.nombre,
+    precio: Number(datosFormulario.precio),
+    stock: calcularEstadoStock(datosFormulario.cantidad),
+  };
+}
