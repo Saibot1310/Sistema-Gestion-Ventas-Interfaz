@@ -1,3 +1,4 @@
+import { cargarProductos, guardarProductos } from "./almacenamiento.js";
 import { obtenerProductosExternos } from "./api.js";
 import { agregarProducto, calcularEstadoStock, eliminarProductoPorId, generarIdProducto, productos, reemplazarProductos } from "./dominio.js";
 import { actualizarEstadoBotonGuardar, mostrarErrorCampo } from "./formulario.js";
@@ -5,6 +6,11 @@ import { marcarPaginaActiva } from "./navegacion.js";
 import { renderizarProductos, renderizarTabla } from "./render.js";
 
 marcarPaginaActiva();
+
+const productosGuardados = cargarProductos();
+if (productosGuardados) {
+  reemplazarProductos(productosGuardados);
+}
 
 const categorias = document.querySelectorAll("#categorias li");
 const resumenStock = document.getElementById("resumen-stock");
@@ -31,6 +37,7 @@ if (tbodyProductos) {
     const id = Number(fila.dataset.idProducto);
 
     reemplazarProductos(eliminarProductoPorId(productos, id));
+    guardarProductos(productos);
     renderizarTabla(productos, tbodyProductos, resumenStock);
   });
 }
@@ -85,6 +92,7 @@ if (formularioProducto) {
     };
 
     reemplazarProductos(agregarProducto(productos, productoNuevo));
+    guardarProductos(productos);
     renderizarTabla(productos, tbodyProductos, resumenStock);
 
     formularioProducto.reset();
