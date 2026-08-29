@@ -87,7 +87,7 @@ if (formularioProducto) {
     const productoNuevo = {
       id: generarIdProducto(productos),
       nombre: datosFormulario.nombre,
-      precio: datosFormulario.precio,
+      precio: Number(datosFormulario.precio),
       stock: calcularEstadoStock(datosFormulario.cantidad),
     };
 
