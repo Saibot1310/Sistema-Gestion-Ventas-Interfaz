@@ -652,3 +652,19 @@ Por medio de un servidor instalado
 - Limitaciones
 - Casos de uso
 - Consideraciones de seguridad
+
+### Módulo 18: Depuración de aplicaciones web
+#### Temas
+- DevTools
+- Console
+- Sources
+- Breakpoints
+- Debugger
+- Network
+- Elements
+- Inspección del DOM
+- Eventos
+- Errores de JavaScript
+- Errores de lógica
+- Errores de integración
+- Debbuging sistemático
