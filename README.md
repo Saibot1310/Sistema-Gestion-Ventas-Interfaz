@@ -668,3 +668,20 @@ Por medio de un servidor instalado
 - Errores de lógica
 - Errores de integración
 - Debbuging sistemático
+
+### Módulo 19: Arquitectura de una aplicación web con JavaScript
+#### Temas
+- Separación de responsabilidades
+- Lógica de negocio
+- Estado
+- Renderizado
+- Eventos
+- DOM
+- Servicios
+- Módulos
+- Flujo de datos
+- Dependencias
+- Organización del proyecto
+- Evitar código monolítico
+- Evitar lógica de negocio dentro de manipuladores de eventos
+- Diseño mantenible
