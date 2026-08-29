@@ -10,3 +10,18 @@
 - Código fuente TypeScript y código JavaScript generado
 - Compatibilidad con JavaScript
 - Cuándo usar TypeScript
+
+## Módulo 2: Configuración del entorno
+### Temas
+- Instalación de TypeScript
+- TypeScript Compiler
+- tsc
+- npm
+- package.json
+- Archivos .ts
+- Compilación
+- Directorio de salida
+- tsconfig.json
+- Opciones fundamentales
+- target, module, rootDir, outDir, strict, sourceMap, include, exclude
+- Desarrollo vs producción
