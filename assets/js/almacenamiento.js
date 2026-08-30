@@ -10,7 +10,10 @@ export function guardarProductos(listaProductos) {
 export function cargarProductos() {
     try {
         const crudo = localStorage.getItem(CLAVE_PRODUCTOS);
-        return crudo ? JSON.parse(crudo) : null;
+        if (!crudo)
+            return null;
+        const parseado = JSON.parse(crudo);
+        return parseado;
     }
     catch (error) {
         console.error("No se puedo leer el catalogo de localStorage:", error);
