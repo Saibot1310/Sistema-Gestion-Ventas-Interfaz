@@ -1,8 +1,10 @@
+export type EstadoStock = "Disponible" | "Agotado";
+
 export interface Producto {
   readonly id: number;
   nombre: string;
   precio: number;
-  stock: string;
+  stock: EstadoStock;
 }
 
 export interface DatosFormularioProducto {
@@ -37,7 +39,7 @@ export function generarIdProducto(listaProductos: Producto[]): number {
   return maximoActual + 1;
 }
 
-export function calcularEstadoStock(cantidad: string): string {
+export function calcularEstadoStock(cantidad: string): EstadoStock {
   return Number(cantidad) > 0 ? "Disponible" : "Agotado";
 }
 
