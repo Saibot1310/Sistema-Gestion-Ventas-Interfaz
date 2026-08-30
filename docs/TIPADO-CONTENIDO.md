@@ -76,3 +76,13 @@
 - Modelado de entidades
 - Contratos de dominio
 - Cuándo utilizar cada mecanismo
+
+## Módulo 7: Union, literal e intersection types
+### Temas
+- Union types
+- Literal types
+- Intersection types
+- Discriminated unions
+- Estados
+- Variantes de entidades
+- Modelado de estados de negocio
