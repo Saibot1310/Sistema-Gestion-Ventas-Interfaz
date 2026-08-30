@@ -30,7 +30,7 @@ export function agregarProducto(listaProductos: Producto[], productoNuevo: Produ
   return [...listaProductos, productoNuevo];
 }
 
-export function eliminarProductoPorId(listaProductos: Producto[], id: number) {
+export function eliminarProductoPorId(listaProductos: Producto[], id: number): Producto[] {
   return listaProductos.filter(producto => producto.id !== id);
 }
 
