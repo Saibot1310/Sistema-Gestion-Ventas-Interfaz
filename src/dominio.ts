@@ -58,3 +58,15 @@ export function crearProductoDesdeFormulario(
     stock: calcularEstadoStock(datosFormulario.cantidad),
   };
 }
+
+export function descripcionEstado(estado: EstadoStock): string {
+  switch (estado) {
+    case "Disponible":
+      return "Hay stock disponbile";
+    case "Agotado":
+      return "Sin stock";
+    default:
+      const _exhaustivo: never = estado;
+      return _exhaustivo;
+  }
+}
