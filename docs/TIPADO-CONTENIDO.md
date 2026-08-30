@@ -99,3 +99,14 @@
 - Discriminated unions
 - Control flow analysis
 - Manejo seguro de tipos
+
+## Módulo 9: null, undefined y seguridad de tipos
+### Temas
+- strictNullChecks
+- null y undefined
+- Optional properties
+- Optional chaining
+- Nullish coalescing
+- Non-null assertion operator
+- Problemas de asumir que un valor existe
+- Diseño de APIs seguras
