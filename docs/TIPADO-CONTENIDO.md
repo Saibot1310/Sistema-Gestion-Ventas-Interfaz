@@ -86,3 +86,16 @@
 - Estados
 - Variantes de entidades
 - Modelado de estados de negocio
+
+## Módulo 8: Narrowing y type guards
+### Temas
+- Type narrowing
+- typeof
+- instanceof
+- in
+- Equality narrowing
+- Type predicates
+- Type guards personalizados
+- Discriminated unions
+- Control flow analysis
+- Manejo seguro de tipos
