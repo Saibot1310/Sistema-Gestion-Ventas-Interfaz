@@ -49,3 +49,18 @@
 - Objetos anidados
 - Inferencia estructural
 - Structural typing
+
+## Módulo 5: Funciones
+### Temas
+- Tipado de parámetros
+- Valores de retorno
+- Funciones que no retornan valores
+- void
+- Funciones opcionales
+- Parámetros opcionales
+- Parámetros por defecto
+- Rest parameters
+- Funciones flecha
+- Callbacks tipados
+- Funciones como tipos
+- Signatura de funciones
