@@ -36,3 +36,16 @@
 - Inferencia de tipos
 - Cuando declarar tipos explícitamente
 - Cuando confiar en la inferencia
+
+## Módulo 4: Variables, objetos y estructuras de datos
+### Temas
+- Tipado de variables
+- Tipado de objetos
+- Propiedades opcionales
+- readonly
+- Array tipados
+- Array de objetos
+- Tuplas
+- Objetos anidados
+- Inferencia estructural
+- Structural typing
