@@ -122,3 +122,14 @@
 - never
 - Exhaustiveness checking
 - Uso responsable de tipos especiales
+
+## Módulo 11: Enums y alternativas
+### Temas
+- Enums
+- Numeric enums
+- String enums
+- Const enums
+- Ventajas y desventajas de enums
+- Alternativas mediante union types
+- Cuándo utilizar enums
+- Cuándo preferir literal unions
