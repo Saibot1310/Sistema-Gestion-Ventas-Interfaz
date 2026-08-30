@@ -64,3 +64,15 @@
 - Callbacks tipados
 - Funciones como tipos
 - Signatura de funciones
+
+## Módulo 6: Type aliases e interfaces
+### Temas
+- type
+- interfaces
+- Diferencias entre type e interface
+- Extender interfaces
+- Intersección de tipos
+- Reutilización de contratos
+- Modelado de entidades
+- Contratos de dominio
+- Cuándo utilizar cada mecanismo
