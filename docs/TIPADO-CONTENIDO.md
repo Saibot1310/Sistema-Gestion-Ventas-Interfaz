@@ -110,3 +110,15 @@
 - Non-null assertion operator
 - Problemas de asumir que un valor existe
 - Diseño de APIs seguras
+
+## Módulo 10: any, unknown y never
+### Temas
+- any
+- Problemas de any
+- Implicit any
+- unknown
+- Diferencias entre any y unknown
+- Narrowing de unknown
+- never
+- Exhaustiveness checking
+- Uso responsable de tipos especiales
