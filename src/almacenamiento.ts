@@ -13,7 +13,11 @@ export function guardarProductos(listaProductos: Producto[]): void {
 export function cargarProductos(): Producto[] | null {
   try {
     const crudo = localStorage.getItem(CLAVE_PRODUCTOS);
-    return crudo ? (JSON.parse(crudo) as Producto[]) : null;
+    if (!crudo) return null;
+
+    const parseado: unknown = JSON.parse(crudo);
+
+    return parseado as Producto[];
   } catch (error) {
     console.error("No se puedo leer el catalogo de localStorage:", error);
     return null;
