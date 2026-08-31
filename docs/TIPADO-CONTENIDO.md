@@ -133,3 +133,15 @@
 - Alternativas mediante union types
 - Cuándo utilizar enums
 - Cuándo preferir literal unions
+
+## Módulo 12: Generics
+### Temas
+- Generic functions
+- Generic interfaces
+- Generic types
+- Type parameters
+- Constraints
+- keyof
+- Generic collections
+- Reutilización de código
+- Type safety
