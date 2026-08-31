@@ -145,3 +145,19 @@
 - Generic collections
 - Reutilización de código
 - Type safety
+
+## Módulo 13: Utility types
+### Temas
+- Partial
+- Required
+- Readonly
+- Pick
+- Omit
+- Record
+- Exclude
+- Extract
+- NonNullable
+- ReturnType
+- Parameters
+- Awaited
+- Composición de utility types
