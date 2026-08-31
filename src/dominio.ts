@@ -48,7 +48,7 @@ export function reemplazarProductos(nuevaLista: Producto[]): void {
 }
 
 export function crearProductoDesdeFormulario(
-  datosFormulario: DatosFormularioProducto,
+  datosFormulario: Pick<DatosFormularioProducto, "nombre" | "precio" | "cantidad">,
   listaProductos: Producto[]
 ): Producto {
   return {
