@@ -14,6 +14,9 @@ export interface DatosFormularioProducto {
   descuento: string;
 }
 
+export type ClaveCampoFormulario = keyof DatosFormularioProducto;
+export type IdCampoFormulario = `${ClaveCampoFormulario}-producto`;
+
 export let productos: Producto[] = [
   { id: 1, nombre: "Auriculares inalámbricos", precio: 45000, stock: "Disponible" },
   { id: 2, nombre: "Lámpara de escritorio LED", precio: 12500, stock: "Disponible" },
