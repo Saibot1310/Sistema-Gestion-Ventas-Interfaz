@@ -173,3 +173,15 @@
 - Infer
 - Introducción a tipos avanzados
 - Cuándo utilizar tipos complejos
+
+## Módulo 15: Módulos y organización
+### Temas
+- Import y export
+- type-only imports y exports
+- Organización de módulos
+- Tipos compartidos
+- Separación de dominio
+- Separación de interfaz
+- Utilidades
+- Dependencias
+- Arquitectura modular
