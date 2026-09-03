@@ -215,3 +215,14 @@
 - Transformación de datos
 - DTOs conceptualmente
 - Separación entre datos externos y dominio
+
+## Módulo 18: TypeScript y asíncronía
+### Temas
+- Promise<T>
+- async/await
+- Tipado de funciones asíncronas
+- Errores
+- try/catch
+- Resultados opcionales
+- Datos posiblmente inexistentes
+- Composición de funciones asíncronas
