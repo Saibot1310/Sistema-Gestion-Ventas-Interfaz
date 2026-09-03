@@ -161,3 +161,15 @@
 - Parameters
 - Awaited
 - Composición de utility types
+
+## Módulo 14: Type manipulation
+### Temas
+- keyof
+- typeof en tipos
+- Indexed access types
+- Mapped types
+- Conditional types
+- Template literal types
+- Infer
+- Introducción a tipos avanzados
+- Cuándo utilizar tipos complejos
