@@ -185,3 +185,19 @@
 - Utilidades
 - Dependencias
 - Arquitectura modular
+
+## Módulo 16: TypeScript y DOM
+### Temas
+- Document
+- Element
+- HTMLElement
+- HTMLInputElement, HTMLButtonElement, HTMLFormElement
+- querySelector y tipos
+- getElementById
+- Type assertions
+- Type guards
+- Eventos tipados
+- Event
+- MouseEvent, KeyboardEvent, SubmitEvent
+- Formularios
+- Elementos posiblemente null
