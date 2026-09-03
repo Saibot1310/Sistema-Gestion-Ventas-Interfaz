@@ -201,3 +201,17 @@
 - MouseEvent, KeyboardEvent, SubmitEvent
 - Formularios
 - Elementos posiblemente null
+
+## Módulo 17: TypeScript y APIs
+### Temas
+- Fetch API
+- Promise
+- JSON
+- Tipado de respuestas
+- Interfaces para datos externos
+- Validación de datos externos
+- Datos no confiables
+- unknown
+- Transformación de datos
+- DTOs conceptualmente
+- Separación entre datos externos y dominio
