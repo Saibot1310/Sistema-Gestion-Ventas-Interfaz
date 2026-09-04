@@ -7,13 +7,14 @@ Construir una estructura en HTML para generar una interfaz web que permita repre
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 
 ## Ejecución
 De manera local
 - Abrir el archivo index.html en un navegador web
 
 Por medio de un servidor instalado
-- Abrir el archivo index.html en un editor de código y ejecutar el Live Server para visualizar la estructura en un navegador web.
+- Abrir el archivo index.html en un editor de código y ejecutar el Live Server para visualizar la aplicación
 
 ## Funcionalidads actuales
 - Estructura básica en HTML
@@ -28,3 +29,4 @@ Por medio de un servidor instalado
 - Validación de formulario de registro de productos
 - Manejo de errores y mensajes de validación
 - Importación de productos externos mediante Fetch API
+- Tipado estricto de la aplicación con TypeScript
