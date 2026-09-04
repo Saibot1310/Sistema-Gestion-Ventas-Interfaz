@@ -22,10 +22,6 @@ export let productos: Producto[] = [
   { id: 5, nombre: "Mochila impermeable", precio: 19900, stock: "Agotado" },
 ];
 
-export function formatearPrecio(precio: number): string {
-  return `$${precio.toLocaleString("es-AR")}`;
-}
-
 export function agregarProducto(listaProductos: Producto[], productoNuevo: Producto): Producto[] {
   return [...listaProductos, productoNuevo];
 }

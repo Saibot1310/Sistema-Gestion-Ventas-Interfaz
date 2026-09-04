@@ -5,9 +5,6 @@ export let productos = [
     { id: 4, nombre: "Cafetera eléctrica", precio: 27000, stock: "Disponible" },
     { id: 5, nombre: "Mochila impermeable", precio: 19900, stock: "Agotado" },
 ];
-export function formatearPrecio(precio) {
-    return `$${precio.toLocaleString("es-AR")}`;
-}
 export function agregarProducto(listaProductos, productoNuevo) {
     return [...listaProductos, productoNuevo];
 }
