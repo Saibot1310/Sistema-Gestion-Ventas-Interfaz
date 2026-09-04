@@ -226,3 +226,17 @@
 - Resultados opcionales
 - Datos posiblmente inexistentes
 - Composición de funciones asíncronas
+
+## Módulo 19: Arquitectura y TypeScript
+### Temas
+- TypeScript como herramienta arquitectónica
+- Contratos
+- Interfaces
+- Separación de responsabilidades
+- Dominio, aplicación e infraestructura
+- Tipos de dominio
+- Tipos de presentación
+- Tipos externos
+- Dependencias
+- Inversión de dependencias
+- Diseño mantenible
